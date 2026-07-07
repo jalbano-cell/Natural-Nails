@@ -1,0 +1,37 @@
+---
+import { business, shades } from "../data/business";
+import BookButton from "./BookButton.astro";
+---
+
+<section class="hero">
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <div class="seal">
+        <span class="stars">★★★★★</span>
+        <small><b>{business.rating.score}</b> from <b>{business.rating.count}</b> Google reviews</small>
+        <span class="chip">{business.city}</span>
+      </div>
+      <h1 class="display">Precise nails. Kind hands. <em>Prices that don't punish you.</em></h1>
+      <p class="lead">From a clean classic gel to the Russian manicure regulars drive across the city for — the work that earned {business.rating.count} reviews on Rathburn Road.</p>
+      <div class="hero-cta">
+        <BookButton showIcon />
+        <a class="btn btn-ghost" href="#services">View the menu</a>
+      </div>
+      <div class="open-note"><span class="dot"></span> {business.openNote}</div>
+    </div>
+
+    <div class="catalog reveal">
+      <div class="swatches">
+        {shades.map((shade) => (
+          <div class={`swatch ${shade.swatch}`}><span>{shade.code} {shade.name}</span></div>
+        ))}
+      </div>
+      <div class="catalog-foot">
+        <b>Can't pick a shade?</b>
+        <small>WE'LL HELP AT THE CHAIR</small>
+      </div>
+    </div>
+  </div>
+</section>

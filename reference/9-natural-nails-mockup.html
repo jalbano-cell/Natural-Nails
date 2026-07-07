@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>9 Natural Nails &amp; Spa — Mississauga Nail Salon</title>
+<meta name="description" content="9 Natural Nails & Spa on Rathburn Rd W, Mississauga. 4.8★ from 773 reviews. Gel, shellac, extensions, pedicures & the Russian manicure regulars love. Call (905) 290-2335." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,900&family=Hanken+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --ink:#241b19;
+    --ink-soft:#5a4a45;
+    --porcelain:#f6f0e8;
+    --porcelain-2:#efe6da;
+    --almond:#e8d7c5;
+    --berry:#8e3b54;
+    --berry-deep:#6c2a3f;
+    --champagne:#b0894f;
+    --blush:#d7a5a3;
+    --line:rgba(36,27,25,.14);
+    --card:#fffdfa;
+    --shadow:0 24px 60px -30px rgba(36,27,25,.45);
+    --display:"Fraunces",Georgia,serif;
+    --body:"Hanken Grotesk",system-ui,sans-serif;
+    --mono:"Space Mono",ui-monospace,monospace;
+  }
+
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+  body{
+    font-family:var(--body);
+    color:var(--ink);
+    background:var(--porcelain);
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
+  }
+  a{color:inherit;text-decoration:none}
+  img{max-width:100%;display:block}
+
+  .wrap{width:min(1180px,92vw);margin-inline:auto}
+
+  .eyebrow{
+    font-family:var(--mono);
+    text-transform:uppercase;
+    letter-spacing:.28em;
+    font-size:.68rem;
+    color:var(--berry);
+  }
+  .display{font-family:var(--display);font-weight:600;line-height:1.02;letter-spacing:-.015em}
+
+  /* ---------- NAV ---------- */
+  header{
+    position:fixed;inset:0 0 auto 0;z-index:60;
+    transition:background .4s ease, box-shadow .4s ease, padding .4s ease;
+    padding:22px 0;
+  }
+  header.scrolled{
+    background:rgba(246,240,232,.86);
+    backdrop-filter:blur(14px);
+    box-shadow:0 1px 0 var(--line);
+    padding:12px 0;
+  }
+  .nav{display:flex;align-items:center;justify-content:space-between;gap:24px}
+  .brand{display:flex;align-items:center;gap:12px}
+  .mark{
+    width:42px;height:42px;border-radius:50%;
+    background:var(--berry);color:#fff;
+    display:grid;place-items:center;
+    font-family:var(--display);font-weight:600;font-size:1.35rem;
+    box-shadow:inset 0 0 0 1px rgba(255,255,255,.25), 0 6px 18px -8px var(--berry-deep);
+    flex:none;
+  }
+  .brand b{font-family:var(--display);font-weight:600;font-size:1.06rem;letter-spacing:-.01em;line-height:1.05;display:block}
+  .brand span{font-family:var(--mono);font-size:.6rem;letter-spacing:.24em;text-transform:uppercase;color:var(--ink-soft)}
+  .nav-links{display:flex;gap:30px;align-items:center}
+  .nav-links a{font-size:.9rem;font-weight:500;position:relative;padding:4px 0}
+  .nav-links a::after{content:"";position:absolute;left:0;bottom:-2px;width:0;height:1.5px;background:var(--berry);transition:width .3s ease}
+  .nav-links a:hover::after{width:100%}
+  .btn{
+    display:inline-flex;align-items:center;gap:9px;
+    font-weight:600;font-size:.92rem;
+    padding:12px 22px;border-radius:999px;
+    transition:transform .25s ease, box-shadow .25s ease, background .25s ease;
+    white-space:nowrap;
+  }
+  .btn-primary{background:var(--berry);color:#fff;box-shadow:0 10px 26px -12px var(--berry-deep)}
+  .btn-primary:hover{transform:translateY(-2px);box-shadow:0 16px 30px -12px var(--berry-deep);background:var(--berry-deep)}
+  .btn-ghost{border:1.4px solid var(--ink);color:var(--ink)}
+  .btn-ghost:hover{background:var(--ink);color:var(--porcelain)}
+  .nav .btn{padding:10px 20px}
+  .nav-toggle{display:none;background:none;border:0;cursor:pointer}
+
+  /* ---------- HERO ---------- */
+  .hero{position:relative;padding:150px 0 90px;overflow:hidden}
+  .hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:center}
+  .seal{
+    display:inline-flex;align-items:center;gap:14px;
+    background:var(--card);border:1px solid var(--line);border-radius:999px;
+    padding:8px 8px 8px 16px;margin-bottom:26px;box-shadow:var(--shadow);
+  }
+  .seal .stars{color:var(--champagne);letter-spacing:2px;font-size:.9rem}
+  .seal small{font-size:.78rem;color:var(--ink-soft);font-weight:500}
+  .seal .chip{background:var(--porcelain-2);border-radius:999px;padding:6px 12px;font-family:var(--mono);font-size:.66rem;letter-spacing:.12em;text-transform:uppercase}
+  .hero h1{font-size:clamp(2.6rem,6vw,4.6rem);margin:10px 0 22px}
+  .hero h1 em{font-style:italic;color:var(--berry);font-weight:500}
+  .hero p.lead{font-size:1.12rem;color:var(--ink-soft);max-width:33ch;margin-bottom:34px}
+  .hero-cta{display:flex;gap:14px;flex-wrap:wrap;align-items:center}
+  .open-note{display:flex;align-items:center;gap:9px;margin-top:26px;font-size:.86rem;color:var(--ink-soft)}
+  .dot{width:9px;height:9px;border-radius:50%;background:#3f9d55;box-shadow:0 0 0 4px rgba(63,157,85,.18)}
+
+  /* hero visual: shade catalog */
+  .catalog{
+    background:var(--card);border:1px solid var(--line);border-radius:26px;
+    padding:26px;box-shadow:var(--shadow);position:relative;
+  }
+  .catalog::before{
+    content:"THE SHADE ROOM";position:absolute;top:-11px;left:26px;
+    background:var(--berry);color:#fff;font-family:var(--mono);font-size:.6rem;
+    letter-spacing:.22em;padding:5px 12px;border-radius:999px;
+  }
+  .swatches{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:8px}
+  .swatch{border-radius:16px;aspect-ratio:3/4;position:relative;overflow:hidden;box-shadow:inset 0 -30px 40px -30px rgba(0,0,0,.4)}
+  .swatch span{position:absolute;left:10px;bottom:9px;font-family:var(--mono);font-size:.6rem;color:rgba(255,255,255,.92);letter-spacing:.05em;mix-blend-mode:difference}
+  .s1{background:linear-gradient(150deg,#b9536b,#8e3b54)}
+  .s2{background:linear-gradient(150deg,#f0d9c4,#d8b48c)}
+  .s3{background:linear-gradient(150deg,#e9b9c0,#c98a9a)}
+  .s4{background:linear-gradient(150deg,#6c2a3f,#3a1622)}
+  .s5{background:conic-gradient(from 210deg,#d9c7b0,#f4ede2,#c9a96a,#e9dcc7,#d9c7b0)}
+  .s6{background:linear-gradient(150deg,#9aa7a0,#5f6f68)}
+  .catalog-foot{display:flex;justify-content:space-between;align-items:center;margin-top:18px;padding-top:16px;border-top:1px solid var(--line)}
+  .catalog-foot b{font-family:var(--display);font-size:1.05rem}
+  .catalog-foot small{font-family:var(--mono);font-size:.62rem;color:var(--ink-soft);letter-spacing:.1em}
+
+  .grain{position:absolute;inset:0;pointer-events:none;opacity:.5;z-index:-1}
+  .blob{position:absolute;border-radius:50%;filter:blur(60px);opacity:.5;z-index:-1}
+  .blob-1{width:420px;height:420px;background:var(--blush);top:-120px;right:-120px}
+  .blob-2{width:360px;height:360px;background:var(--almond);bottom:-140px;left:-120px}
+
+  /* ---------- MARQUEE (real reviews) ---------- */
+  .marquee{background:var(--ink);color:var(--porcelain);padding:20px 0;overflow:hidden;white-space:nowrap}
+  .marquee-track{display:inline-flex;gap:56px;animation:scroll 34s linear infinite;will-change:transform}
+  .marquee:hover .marquee-track{animation-play-state:paused}
+  .marquee-track span{font-family:var(--display);font-style:italic;font-size:1.15rem;display:inline-flex;align-items:center;gap:56px}
+  .marquee-track span::after{content:"✦";color:var(--champagne);font-style:normal;font-size:.8rem}
+  @keyframes scroll{to{transform:translateX(-50%)}}
+  @media (prefers-reduced-motion:reduce){.marquee-track{animation:none;white-space:normal;flex-wrap:wrap;justify-content:center}}
+
+  /* ---------- SECTION SHELL ---------- */
+  section.block{padding:96px 0}
+  .head{max-width:640px;margin-bottom:52px}
+  .head h2{font-size:clamp(2rem,4vw,3rem);margin:14px 0 16px}
+  .head p{color:var(--ink-soft);font-size:1.05rem}
+
+  /* ---------- SERVICES ---------- */
+  .menu-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:30px 56px}
+  .menu-col h3{font-family:var(--display);font-size:1.4rem;font-weight:600;display:flex;align-items:baseline;gap:12px;margin-bottom:6px}
+  .menu-col h3 i{font-family:var(--mono);font-style:normal;font-size:.7rem;color:var(--berry);letter-spacing:.15em}
+  .menu-col > p{color:var(--ink-soft);font-size:.9rem;margin-bottom:20px}
+  .price-row{display:flex;align-items:baseline;gap:14px;padding:13px 0;border-bottom:1px dashed var(--line)}
+  .price-row .name{font-weight:600;font-size:.98rem}
+  .price-row .name small{display:block;font-weight:400;color:var(--ink-soft);font-size:.8rem}
+  .price-row .leader{flex:1;border-bottom:1px dotted var(--line);transform:translateY(-4px)}
+  .price-row .price{font-family:var(--mono);font-weight:700;font-size:.95rem;color:var(--ink)}
+  .tag{display:inline-block;background:var(--berry);color:#fff;font-family:var(--mono);font-size:.56rem;letter-spacing:.14em;text-transform:uppercase;padding:3px 8px;border-radius:999px;vertical-align:middle;margin-left:8px}
+  .menu-note{margin-top:34px;font-size:.82rem;color:var(--ink-soft);font-family:var(--mono);letter-spacing:.04em}
+
+  /* ---------- RUSSIAN MANICURE FEATURE ---------- */
+  .feature{background:var(--ink);color:var(--porcelain);border-radius:34px;padding:clamp(34px,5vw,68px);display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center;position:relative;overflow:hidden}
+  .feature .eyebrow{color:var(--blush)}
+  .feature h2{font-family:var(--display);font-weight:600;font-size:clamp(1.9rem,3.6vw,2.8rem);line-height:1.05;margin:14px 0 20px}
+  .feature p{color:rgba(246,240,232,.78);margin-bottom:16px}
+  .feature ul{list-style:none;display:grid;gap:12px;margin:24px 0 30px}
+  .feature li{display:flex;gap:12px;align-items:flex-start;font-size:.95rem}
+  .feature li::before{content:"";width:20px;height:20px;border-radius:50%;background:var(--berry);flex:none;margin-top:3px;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23fff' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'/%3E%3C/svg%3E");background-size:12px;background-repeat:no-repeat;background-position:center}
+  .feature-art{aspect-ratio:1;border-radius:24px;position:relative;background:
+    radial-gradient(circle at 30% 25%, rgba(215,165,163,.4), transparent 55%),
+    radial-gradient(circle at 75% 80%, rgba(176,137,79,.35), transparent 50%),
+    linear-gradient(160deg,#3a2a2e,#241b19);
+    border:1px solid rgba(246,240,232,.12);display:grid;place-items:center;overflow:hidden}
+  .hand{width:74%;filter:drop-shadow(0 20px 40px rgba(0,0,0,.5))}
+  .price-badge{position:absolute;bottom:20px;right:20px;background:var(--porcelain);color:var(--ink);border-radius:16px;padding:12px 16px;text-align:right;box-shadow:var(--shadow)}
+  .price-badge b{font-family:var(--display);font-size:1.5rem;display:block;line-height:1}
+  .price-badge small{font-family:var(--mono);font-size:.58rem;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-soft)}
+
+  /* ---------- GALLERY (CSS finishes) ---------- */
+  .gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+  .look{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:16px;transition:transform .3s ease,box-shadow .3s ease}
+  .look:hover{transform:translateY(-6px);box-shadow:var(--shadow)}
+  .nails{display:flex;gap:5px;justify-content:center;align-items:flex-end;height:120px;margin-bottom:14px}
+  .nail{width:17px;border-radius:40% 40% 46% 46%/60% 60% 40% 40%;box-shadow:inset 0 8px 12px -8px rgba(255,255,255,.7), inset 0 -10px 14px -8px rgba(0,0,0,.25)}
+  .nail:nth-child(1){height:64%}.nail:nth-child(2){height:82%}.nail:nth-child(3){height:100%}.nail:nth-child(4){height:88%}.nail:nth-child(5){height:58%}
+  .look h4{font-family:var(--display);font-size:1.05rem;font-weight:600}
+  .look small{font-family:var(--mono);font-size:.62rem;color:var(--ink-soft);letter-spacing:.08em}
+  .f-berry{background:linear-gradient(160deg,#a5475f,#7c2f45)}
+  .f-french{background:linear-gradient(160deg,#f6ebe0,#e9d3c2);position:relative}
+  .f-french::after{content:"";position:absolute;left:0;right:0;top:0;height:26%;background:#fff;border-radius:inherit inherit 0 0}
+  .f-chrome{background:linear-gradient(135deg,#e7d9c4,#b9a37e 45%,#f4ede2 60%,#c9a96a)}
+  .f-cateye{background:linear-gradient(120deg,#2c1e33,#6d4b8a 50%,#2c1e33);position:relative}
+  .f-cateye::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,transparent 44%,rgba(255,255,255,.55) 50%,transparent 56%);border-radius:inherit}
+  .f-ombre{background:linear-gradient(180deg,#d7a5a3,#8e3b54)}
+  .f-nude{background:linear-gradient(160deg,#f0d9c4,#d8b48c)}
+  .f-red{background:linear-gradient(160deg,#c0353f,#8a1f2a)}
+  .f-emerald{background:linear-gradient(160deg,#3f7d63,#245243)}
+  .gallery-note{grid-column:1/-1;text-align:center;font-family:var(--mono);font-size:.78rem;color:var(--ink-soft);margin-top:10px;letter-spacing:.04em}
+
+  /* ---------- INSTAGRAM ---------- */
+  .ig{background:var(--porcelain-2)}
+  .ig-head{display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;margin-bottom:34px}
+  .ig-id{display:flex;align-items:center;gap:18px}
+  .ig-ring{width:66px;height:66px;border-radius:50%;padding:3px;background:conic-gradient(from 210deg,#b0894f,#8e3b54,#d7a5a3,#b0894f);flex:none}
+  .ig-ring .mark{width:100%;height:100%;font-size:1.8rem}
+  .ig-id h3{font-family:var(--display);font-size:1.35rem;font-weight:600;line-height:1.1}
+  .ig-id .handle{font-family:var(--mono);font-size:.82rem;color:var(--berry)}
+  .ig-id .bio{font-size:.85rem;color:var(--ink-soft);margin-top:2px}
+  .ig-stats{display:flex;gap:26px}
+  .ig-stats div{text-align:center}
+  .ig-stats b{font-family:var(--display);font-size:1.5rem;font-weight:600;display:block;line-height:1}
+  .ig-stats small{font-family:var(--mono);font-size:.6rem;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft)}
+  .ig-feed{display:grid;grid-template-columns:repeat(6,1fr);gap:10px}
+  .ig-tile{aspect-ratio:1;border-radius:14px;position:relative;overflow:hidden;display:grid;place-items:center;box-shadow:inset 0 -26px 40px -26px rgba(0,0,0,.45)}
+  .ig-tile svg{opacity:0;transition:opacity .3s ease;color:#fff}
+  .ig-tile:hover svg{opacity:1}
+  .ig-tile::before{content:"";position:absolute;inset:0;background:rgba(36,27,25,0);transition:background .3s ease}
+  .ig-tile:hover::before{background:rgba(36,27,25,.35)}
+  .ig-cta{display:flex;justify-content:center;margin-top:30px}
+  .btn-ig{background:linear-gradient(120deg,#b0894f,#8e3b54);color:#fff}
+  .btn-ig:hover{transform:translateY(-2px);box-shadow:0 16px 30px -12px var(--berry-deep)}
+  .ig-note{text-align:center;font-family:var(--mono);font-size:.76rem;color:var(--ink-soft);margin-top:14px;letter-spacing:.04em}
+
+  /* ---------- REVIEWS ---------- */
+  .reviews{background:var(--porcelain-2)}
+  .rev-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:56px;align-items:center}
+  .rev-score{text-align:center;background:var(--card);border:1px solid var(--line);border-radius:26px;padding:40px 30px;box-shadow:var(--shadow)}
+  .rev-score .big{font-family:var(--display);font-size:4.4rem;font-weight:600;line-height:1;color:var(--berry)}
+  .rev-score .stars{color:var(--champagne);font-size:1.3rem;letter-spacing:4px;margin:8px 0}
+  .rev-score p{font-size:.9rem;color:var(--ink-soft)}
+  .rev-score .gsource{display:inline-flex;align-items:center;gap:8px;margin-top:16px;font-size:.82rem;font-weight:600}
+  .rev-cards{display:grid;gap:18px}
+  .rev-card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:24px 26px}
+  .rev-card .stars{color:var(--champagne);letter-spacing:2px;font-size:.85rem;margin-bottom:10px}
+  .rev-card blockquote{font-family:var(--display);font-size:1.12rem;line-height:1.4;font-style:italic}
+  .rev-card cite{display:block;margin-top:12px;font-style:normal;font-size:.78rem;color:var(--ink-soft);font-family:var(--mono);letter-spacing:.06em}
+
+  /* ---------- VISIT ---------- */
+  .visit-grid{display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid var(--line);border-radius:28px;overflow:hidden;box-shadow:var(--shadow);background:var(--card)}
+  .visit-info{padding:clamp(30px,4vw,54px)}
+  .visit-info h2{font-family:var(--display);font-size:clamp(1.9rem,3.5vw,2.6rem);font-weight:600;margin:12px 0 24px;line-height:1.05}
+  .info-row{display:flex;gap:16px;padding:16px 0;border-bottom:1px solid var(--line)}
+  .info-row:last-of-type{border-bottom:0}
+  .info-row .ic{width:38px;height:38px;border-radius:11px;background:var(--porcelain-2);display:grid;place-items:center;flex:none;color:var(--berry)}
+  .info-row b{font-size:.95rem;display:block}
+  .info-row span{font-size:.9rem;color:var(--ink-soft)}
+  .info-row a{color:var(--berry);font-weight:600}
+  .hours{margin:6px 0 0;font-size:.9rem}
+  .hours div{display:flex;justify-content:space-between;padding:5px 0;color:var(--ink-soft)}
+  .hours div b{color:var(--ink);font-weight:600}
+  .visit-info .btn{margin-top:28px}
+  .map{min-height:420px;border:0}
+  iframe.map{width:100%;height:100%}
+
+  /* ---------- CTA STRIP ---------- */
+  .final{background:var(--berry);color:#fff;border-radius:34px;text-align:center;padding:clamp(44px,6vw,80px);position:relative;overflow:hidden}
+  .final::before,.final::after{content:"";position:absolute;border-radius:50%;filter:blur(50px);opacity:.4}
+  .final::before{width:300px;height:300px;background:var(--blush);top:-100px;left:-60px}
+  .final::after{width:280px;height:280px;background:var(--champagne);bottom:-120px;right:-40px}
+  .final h2{font-family:var(--display);font-weight:600;font-size:clamp(2rem,4.5vw,3.2rem);line-height:1.05;margin-bottom:16px;position:relative}
+  .final p{color:rgba(255,255,255,.85);max-width:44ch;margin:0 auto 30px;position:relative}
+  .final .btn-primary{background:#fff;color:var(--berry);position:relative;font-size:1.05rem;padding:16px 32px}
+  .final .btn-primary:hover{background:var(--ink);color:#fff}
+
+  /* ---------- FOOTER ---------- */
+  footer{padding:70px 0 40px}
+  .foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px;padding-bottom:40px;border-bottom:1px solid var(--line)}
+  footer .brand b{font-size:1.2rem}
+  .foot-grid p{color:var(--ink-soft);font-size:.9rem;margin-top:16px;max-width:34ch}
+  .foot-col h5{font-family:var(--mono);font-size:.66rem;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-soft);margin-bottom:16px}
+  .foot-col a{display:block;font-size:.92rem;padding:5px 0;color:var(--ink-soft);transition:color .2s}
+  .foot-col a:hover{color:var(--berry)}
+  .foot-bottom{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px;padding-top:26px;font-size:.8rem;color:var(--ink-soft)}
+  .foot-bottom .mono{font-family:var(--mono);letter-spacing:.06em}
+
+  /* ---------- REVEAL ---------- */
+  .reveal{opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .7s ease}
+  .reveal.in{opacity:1;transform:none}
+  @media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}}
+
+  /* ---------- RESPONSIVE ---------- */
+  @media (max-width:960px){
+    .hero-grid,.feature,.rev-grid,.visit-grid,.foot-grid{grid-template-columns:1fr}
+    .hero{padding-top:130px}
+    .catalog{max-width:420px;margin-inline:auto}
+    .menu-grid{grid-template-columns:1fr;gap:36px}
+    .gallery{grid-template-columns:repeat(2,1fr)}
+    .map{min-height:320px}
+    .nav-links{display:none}
+    .nav-toggle{display:block}
+    .feature-art{max-width:360px;margin-inline:auto}
+    .ig-feed{grid-template-columns:repeat(3,1fr)}
+    .ig-head{flex-direction:column;align-items:flex-start}
+  }
+  @media (max-width:520px){
+    .gallery{grid-template-columns:repeat(2,1fr)}
+    .seal{flex-wrap:wrap}
+    .swatches{gap:10px}
+  }
+</style>
+</head>
+<body>
+
+<header id="site-header">
+  <div class="wrap nav">
+    <a class="brand" href="#top" aria-label="9 Natural Nails and Spa home">
+      <span class="mark">9</span>
+      <span><b>Natural Nails &amp; Spa</b><span>Mississauga · Est. Rathburn Rd</span></span>
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#services">Services</a>
+      <a href="#gallery">Looks</a>
+      <a href="#instagram">Instagram</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#visit">Visit</a>
+    </nav>
+    <a class="btn btn-primary" href="tel:+19052902335">Call to book</a>
+    <button class="nav-toggle" aria-label="Menu" onclick="document.querySelector('.nav-links').classList.toggle('open-mobile')">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="7" x2="21" y2="7"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="17" x2="21" y2="17"/></svg>
+    </button>
+  </div>
+</header>
+
+<a id="top"></a>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <div class="seal">
+        <span class="stars">★★★★★</span>
+        <small><b>4.8</b> from <b>773</b> Google reviews</small>
+        <span class="chip">Mississauga</span>
+      </div>
+      <h1 class="display">Precise nails. Kind hands. <em>Prices that don't punish you.</em></h1>
+      <p class="lead">From a clean classic gel to the Russian manicure regulars drive across the city for — the work that earned 773 reviews on Rathburn Road.</p>
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="tel:+19052902335">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          (905) 290-2335
+        </a>
+        <a class="btn btn-ghost" href="#services">View the menu</a>
+      </div>
+      <div class="open-note"><span class="dot"></span> Open today · 10:00 am – 8:00 pm · Walk-ins welcome</div>
+    </div>
+
+    <div class="catalog reveal">
+      <div class="swatches">
+        <div class="swatch s1"><span>N.09 Vamp</span></div>
+        <div class="swatch s2"><span>N.02 Café Crème</span></div>
+        <div class="swatch s3"><span>N.05 Rosé</span></div>
+        <div class="swatch s4"><span>N.11 Merlot</span></div>
+        <div class="swatch s5"><span>N.14 Chrome</span></div>
+        <div class="swatch s6"><span>N.07 Sage</span></div>
+      </div>
+      <div class="catalog-foot">
+        <b>Can't pick a shade?</b>
+        <small>WE'LL HELP AT THE CHAIR</small>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REAL REVIEW MARQUEE -->
+<div class="marquee" aria-hidden="false">
+  <div class="marquee-track">
+    <span>“Great service and very kind staff that go the extra mile.”</span>
+    <span>“Their prices cannot be beat for the quality of workmanship.”</span>
+    <span>“They also offer Russian manicures at a great price!”</span>
+    <span>“Great service and very kind staff that go the extra mile.”</span>
+    <span>“Their prices cannot be beat for the quality of workmanship.”</span>
+    <span>“They also offer Russian manicures at a great price!”</span>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<section class="block" id="services">
+  <div class="wrap">
+    <div class="head reveal">
+      <span class="eyebrow">The Menu</span>
+      <h2 class="display">Everything for hands &amp; feet</h2>
+      <p>Honest pricing, no surprise add-ons at the till. Tell us the look you're after and we'll build the service around it.</p>
+    </div>
+
+    <div class="menu-grid">
+      <div class="menu-col reveal">
+        <h3>Manicures <i>/ hands</i></h3>
+        <p>Shaping, cuticle care, and a finish that lasts.</p>
+        <div class="price-row"><div class="name">Classic Manicure</div><div class="leader"></div><div class="price">$25</div></div>
+        <div class="price-row"><div class="name">Gel / Shellac Manicure</div><div class="leader"></div><div class="price">$40</div></div>
+        <div class="price-row"><div class="name">Russian Manicure <span class="tag">Signature</span><small>Dry, precise cuticle work — cleaner edges, longer wear</small></div><div class="leader"></div><div class="price">$55</div></div>
+        <div class="price-row"><div class="name">BioGel Overlay</div><div class="leader"></div><div class="price">$50</div></div>
+      </div>
+
+      <div class="menu-col reveal">
+        <h3>Pedicures <i>/ feet</i></h3>
+        <p>Because your feet deserve the same care as your hands.</p>
+        <div class="price-row"><div class="name">Classic Pedicure</div><div class="leader"></div><div class="price">$35</div></div>
+        <div class="price-row"><div class="name">Gel Pedicure</div><div class="leader"></div><div class="price">$50</div></div>
+        <div class="price-row"><div class="name">Russian Pedicure <span class="tag">Signature</span><small>The same precise, long-wear technique — for toes</small></div><div class="leader"></div><div class="price">$65</div></div>
+        <div class="price-row"><div class="name">Spa Deluxe Pedicure<small>Scrub, mask, hot towel &amp; extended massage</small></div><div class="leader"></div><div class="price">$60</div></div>
+      </div>
+
+      <div class="menu-col reveal">
+        <h3>Extensions <i>/ length</i></h3>
+        <p>Acrylic, hard gel and dip — built to your shape.</p>
+        <div class="price-row"><div class="name">Acrylic Full Set</div><div class="leader"></div><div class="price">$55</div></div>
+        <div class="price-row"><div class="name">Hard Gel Full Set</div><div class="leader"></div><div class="price">$65</div></div>
+        <div class="price-row"><div class="name">Dip Powder</div><div class="leader"></div><div class="price">$50</div></div>
+        <div class="price-row"><div class="name">Fills &amp; Refresh<small>From</small></div><div class="leader"></div><div class="price">$40</div></div>
+      </div>
+
+      <div class="menu-col reveal">
+        <h3>Art &amp; Add-ons <i>/ finish</i></h3>
+        <p>The little details people notice.</p>
+        <div class="price-row"><div class="name">French / Ombré</div><div class="leader"></div><div class="price">+$10</div></div>
+        <div class="price-row"><div class="name">Chrome / Cat-Eye</div><div class="leader"></div><div class="price">+$10</div></div>
+        <div class="price-row"><div class="name">Nail Art <small>Per nail</small></div><div class="leader"></div><div class="price">+$5</div></div>
+        <div class="price-row"><div class="name">Soak-off &amp; Removal</div><div class="leader"></div><div class="price">$15</div></div>
+      </div>
+
+      <div class="menu-col reveal">
+        <h3>Waxing <i>/ smooth</i></h3>
+        <p>Quick, careful hair removal while you're in the chair.</p>
+        <div class="price-row"><div class="name">Eyebrow</div><div class="leader"></div><div class="price">$12</div></div>
+        <div class="price-row"><div class="name">Lip / Chin</div><div class="leader"></div><div class="price">$8</div></div>
+        <div class="price-row"><div class="name">Full Face</div><div class="leader"></div><div class="price">$35</div></div>
+        <div class="price-row"><div class="name">Underarm</div><div class="leader"></div><div class="price">$18</div></div>
+      </div>
+    </div>
+    <p class="menu-note">Sample pricing shown for preview — final menu &amp; prices confirmed with the salon.</p>
+  </div>
+</section>
+
+<!-- RUSSIAN MANICURE FEATURE -->
+<section class="block" id="russian" style="padding-top:20px">
+  <div class="wrap">
+    <div class="feature reveal">
+      <div class="feature-body">
+        <span class="eyebrow">Why people travel for it</span>
+        <h2>The Russian manicure, done right.</h2>
+        <p>It's a <em>dry</em> manicure — no soaking. An e-file gently lifts the cuticle so colour can be laid right up to the skin. The result is a cleaner edge and wear that stretches past three weeks.</p>
+        <ul>
+          <li>Ultra-clean cuticle line with zero flooding</li>
+          <li>Colour applied closer to the base — grows out gracefully</li>
+          <li>Longer-lasting than a standard gel manicure</li>
+          <li>Loved by clients who want their nails to look freshly done for weeks</li>
+        </ul>
+        <a class="btn btn-primary" href="tel:+19052902335">Book a Russian manicure</a>
+      </div>
+      <div class="feature-art">
+        <svg class="hand" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <g stroke="rgba(246,240,232,.9)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M70 175 C58 150 56 120 60 96 C61 88 70 88 71 96 L74 120" fill="rgba(232,215,197,.16)"/>
+            <path d="M74 118 C72 96 72 70 74 58 C75 50 84 50 85 58 L86 116"/>
+            <path d="M86 116 C85 92 86 62 88 50 C89 42 98 42 99 50 L100 114"/>
+            <path d="M100 114 C99 94 100 66 102 56 C103 48 112 48 113 56 L114 116"/>
+            <path d="M114 118 C114 100 116 82 119 74 C121 68 129 70 128 78 L124 118"/>
+            <path d="M60 96 C56 108 58 150 70 175 L124 175 C132 150 130 130 124 118 C118 128 100 128 100 114"/>
+          </g>
+          <g fill="var(--berry)">
+            <ellipse cx="78" cy="55" rx="6" ry="8"/>
+            <ellipse cx="92" cy="47" rx="6" ry="8"/>
+            <ellipse cx="106" cy="53" rx="6" ry="8"/>
+            <ellipse cx="121" cy="72" rx="5.5" ry="7"/>
+            <ellipse cx="65" cy="93" rx="5.5" ry="7"/>
+          </g>
+        </svg>
+        <div class="price-badge"><b>$55</b><small>Russian mani</small></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="block" id="gallery" style="padding-top:20px">
+  <div class="wrap">
+    <div class="head reveal">
+      <span class="eyebrow">The Lookbook</span>
+      <h2 class="display">Finishes we love</h2>
+      <p>A few of the styles walking out our door. Bring a screenshot of anything you've saved — we'll recreate it.</p>
+    </div>
+    <div class="gallery">
+      <div class="look reveal"><div class="nails"><div class="nail f-berry"></div><div class="nail f-berry"></div><div class="nail f-berry"></div><div class="nail f-berry"></div><div class="nail f-berry"></div></div><h4>Vamp Berry</h4><small>GEL · N.09</small></div>
+      <div class="look reveal"><div class="nails"><div class="nail f-french"></div><div class="nail f-french"></div><div class="nail f-french"></div><div class="nail f-french"></div><div class="nail f-french"></div></div><h4>Modern French</h4><small>SHELLAC · TIP</small></div>
+      <div class="look reveal"><div class="nails"><div class="nail f-chrome"></div><div class="nail f-chrome"></div><div class="nail f-chrome"></div><div class="nail f-chrome"></div><div class="nail f-chrome"></div></div><h4>Champagne Chrome</h4><small>MIRROR · N.14</small></div>
+      <div class="look reveal"><div class="nails"><div class="nail f-cateye"></div><div class="nail f-cateye"></div><div class="nail f-cateye"></div><div class="nail f-cateye"></div><div class="nail f-cateye"></div></div><h4>Velvet Cat-Eye</h4><small>MAGNETIC · GEL</small></div>
+      <div class="look reveal"><div class="nails"><div class="nail f-ombre"></div><div class="nail f-ombre"></div><div class="nail f-ombre"></div><div class="nail f-ombre"></div><div class="nail f-ombre"></div></div><h4>Rosé Ombré</h4><small>BLEND · N.05</small></div>
+      <div class="look reveal"><div class="nails"><div class="nail f-nude"></div><div class="nail f-nude"></div><div class="nail f-nude"></div><div class="nail f-nude"></div><div class="nail f-nude"></div></div><h4>Café Crème</h4><small>NATURAL · N.02</small></div>
+      <div class="look reveal"><div class="nails"><div class="nail f-red"></div><div class="nail f-red"></div><div class="nail f-red"></div><div class="nail f-red"></div><div class="nail f-red"></div></div><h4>Classic Red</h4><small>GLOSS · N.01</small></div>
+      <div class="look reveal"><div class="nails"><div class="nail f-emerald"></div><div class="nail f-emerald"></div><div class="nail f-emerald"></div><div class="nail f-emerald"></div><div class="nail f-emerald"></div></div><h4>Deep Sage</h4><small>MATTE · N.07</small></div>
+      <p class="gallery-note">↑ Illustrative swatches for the preview — replace with real photos of your work.</p>
+    </div>
+  </div>
+</section>
+
+<!-- INSTAGRAM -->
+<section class="block ig" id="instagram">
+  <div class="wrap">
+    <div class="ig-head reveal">
+      <div class="ig-id">
+        <div class="ig-ring"><span class="mark">9</span></div>
+        <div>
+          <h3>9 Natural Nails and Spa Mississauga</h3>
+          <a class="handle" href="https://www.instagram.com/9naturalnailsandspa/" target="_blank" rel="noopener">@9naturalnailsandspa</a>
+          <div class="bio">Luxury Nails · Waxing · Russian Mani &amp; Pedi</div>
+        </div>
+      </div>
+      <div class="ig-stats">
+        <div><b>383</b><small>Posts</small></div>
+        <div><b>333</b><small>Followers</small></div>
+        <div><b>4.8★</b><small>Rated</small></div>
+      </div>
+    </div>
+
+    <div class="ig-feed">
+      <a class="ig-tile f-berry reveal" href="https://www.instagram.com/9naturalnailsandspa/" target="_blank" rel="noopener" aria-label="View on Instagram"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+      <a class="ig-tile f-chrome reveal" href="https://www.instagram.com/9naturalnailsandspa/" target="_blank" rel="noopener" aria-label="View on Instagram"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+      <a class="ig-tile f-cateye reveal" href="https://www.instagram.com/9naturalnailsandspa/" target="_blank" rel="noopener" aria-label="View on Instagram"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+      <a class="ig-tile f-ombre reveal" href="https://www.instagram.com/9naturalnailsandspa/" target="_blank" rel="noopener" aria-label="View on Instagram"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+      <a class="ig-tile f-nude reveal" href="https://www.instagram.com/9naturalnailsandspa/" target="_blank" rel="noopener" aria-label="View on Instagram"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+      <a class="ig-tile f-red reveal" href="https://www.instagram.com/9naturalnailsandspa/" target="_blank" rel="noopener" aria-label="View on Instagram"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+    </div>
+
+    <div class="ig-cta reveal">
+      <a class="btn btn-ig" href="https://www.instagram.com/9naturalnailsandspa/" target="_blank" rel="noopener">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+        Follow @9naturalnailsandspa
+      </a>
+    </div>
+    <p class="ig-note">Preview tiles — connect the live Instagram feed to show real posts here.</p>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="block reviews" id="reviews">
+  <div class="wrap rev-grid">
+    <div class="rev-score reveal">
+      <div class="big">4.8</div>
+      <div class="stars">★★★★★</div>
+      <p>Rated by <b>773</b> guests</p>
+      <div class="gsource">
+        <svg width="18" height="18" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 0 1-2.2 3.32v2.77h3.57c2.08-1.92 3.27-4.74 3.27-8.1z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84A11 11 0 0 0 12 23z"/><path fill="#FBBC05" d="M5.84 14.1a6.6 6.6 0 0 1 0-4.2V7.06H2.18a11 11 0 0 0 0 9.88l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84C6.71 7.31 9.14 5.38 12 5.38z"/></svg>
+        Google Reviews
+      </div>
+    </div>
+    <div class="rev-cards">
+      <div class="rev-card reveal">
+        <div class="stars">★★★★★</div>
+        <blockquote>“Great service and very kind staff that go the extra mile.”</blockquote>
+        <cite>— Verified Google review</cite>
+      </div>
+      <div class="rev-card reveal">
+        <div class="stars">★★★★★</div>
+        <blockquote>“Their prices cannot be beat for the quality of workmanship that they produce.”</blockquote>
+        <cite>— Verified Google review</cite>
+      </div>
+      <div class="rev-card reveal">
+        <div class="stars">★★★★★</div>
+        <blockquote>“They also offer Russian manicures at a great price!”</blockquote>
+        <cite>— Verified Google review</cite>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VISIT -->
+<section class="block" id="visit">
+  <div class="wrap">
+    <div class="visit-grid reveal">
+      <div class="visit-info">
+        <span class="eyebrow">Come see us</span>
+        <h2>Find us on Rathburn Road</h2>
+        <div class="info-row">
+          <span class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
+          <div><b>Address</b><span>900 Rathburn Rd W, Unit B1<br>Mississauga, ON L5C 4L4</span></div>
+        </div>
+        <div class="info-row">
+          <span class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>
+          <div><b>Phone</b><span><a href="tel:+19052902335">(905) 290-2335</a></span></div>
+        </div>
+        <div class="info-row">
+          <span class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
+          <div style="flex:1"><b>Hours</b>
+            <div class="hours">
+              <div><span>Mon – Fri</span><b>10:00 am – 8:00 pm</b></div>
+              <div><span>Saturday</span><b>10:00 am – 6:00 pm</b></div>
+              <div><span>Sunday</span><b>11:00 am – 5:00 pm</b></div>
+            </div>
+          </div>
+        </div>
+        <a class="btn btn-primary" href="tel:+19052902335">Call to book your visit</a>
+      </div>
+      <iframe class="map" title="Map to 9 Natural Nails & Spa" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+        src="https://www.google.com/maps?q=900+Rathburn+Rd+W+Unit+B1,+Mississauga,+ON+L5C+4L4&output=embed"></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="block" style="padding-top:20px">
+  <div class="wrap">
+    <div class="final reveal">
+      <h2>Your next set is a phone call away.</h2>
+      <p>Same-day appointments and walk-ins welcome. Tell us the look — we'll take care of the rest.</p>
+      <a class="btn btn-primary" href="tel:+19052902335">Call (905) 290-2335</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="brand" href="#top">
+          <span class="mark">9</span>
+          <span><b>Natural Nails &amp; Spa</b><span>Mississauga, Ontario</span></span>
+        </a>
+        <p>A neighbourhood nail salon on Rathburn Road, known for careful work, kind staff, and prices that stay fair.</p>
+      </div>
+      <div class="foot-col">
+        <h5>Explore</h5>
+        <a href="#services">Services &amp; Pricing</a>
+        <a href="#russian">Russian Manicure</a>
+        <a href="#gallery">Lookbook</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#visit">Visit Us</a>
+      </div>
+      <div class="foot-col">
+        <h5>Get in touch</h5>
+        <a href="tel:+19052902335">(905) 290-2335</a>
+        <a href="https://www.instagram.com/9naturalnailsandspa/" target="_blank" rel="noopener">Instagram · @9naturalnailsandspa</a>
+        <a href="https://www.google.com/maps?q=900+Rathburn+Rd+W+Unit+B1,+Mississauga,+ON+L5C+4L4" target="_blank" rel="noopener">900 Rathburn Rd W, Unit B1</a>
+        <a href="#visit">Mississauga, ON L5C 4L4</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span class="mono">© 2026 9 Natural Nails &amp; Spa</span>
+      <span class="mono">Website preview — OmniGrid Digital</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Nav scroll state
+  const header = document.getElementById('site-header');
+  const onScroll = () => header.classList.toggle('scrolled', window.scrollY > 24);
+  onScroll();
+  window.addEventListener('scroll', onScroll, {passive:true});
+
+  // Scroll reveal
+  const io = new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} });
+  }, {threshold:.12, rootMargin:'0px 0px -40px 0px'});
+  document.querySelectorAll('.reveal').forEach((el,i)=>{ el.style.transitionDelay = (i%4*60)+'ms'; io.observe(el); });
+
+  // Mobile nav quick styles
+  const style = document.createElement('style');
+  style.textContent = `.nav-links.open-mobile{display:flex;position:absolute;top:100%;right:4vw;flex-direction:column;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px 22px;gap:14px;box-shadow:var(--shadow)}`;
+  document.head.appendChild(style);
+</script>
+</body>
+</html>

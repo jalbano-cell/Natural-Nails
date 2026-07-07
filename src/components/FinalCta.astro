@@ -1,0 +1,16 @@
+---
+import { business, isSetmoreActive } from "../data/business";
+import BookButton from "./BookButton.astro";
+
+const setmore = isSetmoreActive();
+---
+
+<section class="block" style="padding-top:20px">
+  <div class="wrap">
+    <div class="final reveal">
+      <h2>{setmore ? "Your next set is a few taps away." : "Your next set is a phone call away."}</h2>
+      <p>Same-day appointments and walk-ins welcome. Tell us the look — we'll take care of the rest.</p>
+      <BookButton phoneLabel={`Call ${business.phone.display}`} setmoreLabel="Book online" />
+    </div>
+  </div>
+</section>

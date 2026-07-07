@@ -1,0 +1,29 @@
+---
+import { galleryLooks } from "../data/business";
+---
+
+<section class="block" id="gallery" style="padding-top:20px">
+  <div class="wrap">
+    <div class="head reveal">
+      <span class="eyebrow">The Lookbook</span>
+      <h2 class="display">Finishes we love</h2>
+      <p>A few of the styles walking out our door. Bring a screenshot of anything you've saved — we'll recreate it.</p>
+    </div>
+    <div class="gallery">
+      {galleryLooks.map((look) => (
+        <div class="look reveal">
+          <div class="nails">
+            <div class={`nail ${look.finishClass}`}></div>
+            <div class={`nail ${look.finishClass}`}></div>
+            <div class={`nail ${look.finishClass}`}></div>
+            <div class={`nail ${look.finishClass}`}></div>
+            <div class={`nail ${look.finishClass}`}></div>
+          </div>
+          <h4>{look.name}</h4>
+          <small>{look.meta}</small>
+        </div>
+      ))}
+      <p class="gallery-note">— Illustrative swatches for the preview — replace with real photos of your work.</p>
+    </div>
+  </div>
+</section>

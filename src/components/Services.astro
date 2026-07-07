@@ -1,0 +1,34 @@
+---
+import { serviceMenu } from "../data/business";
+---
+
+<section class="block" id="services">
+  <div class="wrap">
+    <div class="head reveal">
+      <span class="eyebrow">The Menu</span>
+      <h2 class="display">Everything for hands &amp; feet</h2>
+      <p>Honest pricing, no surprise add-ons at the till. Tell us the look you're after and we'll build the service around it.</p>
+    </div>
+
+    <div class="menu-grid">
+      {serviceMenu.map((column) => (
+        <div class="menu-col reveal">
+          <h3>{column.title} <i>{column.subtitle}</i></h3>
+          <p>{column.description}</p>
+          {column.items.map((item) => (
+            <div class="price-row">
+              <div class="name">
+                {item.name}
+                {item.tag && <span class="tag">{item.tag}</span>}
+                {item.note && <small>{item.note}</small>}
+              </div>
+              <div class="leader"></div>
+              <div class="price">{item.price}</div>
+            </div>
+          ))}
+        </div>
+      ))}
+    </div>
+    <p class="menu-note">Sample pricing shown for preview — final menu &amp; prices confirmed with the salon.</p>
+  </div>
+</section>

@@ -1,0 +1,26 @@
+---
+import { business } from "../data/business";
+import BookButton from "./BookButton.astro";
+---
+
+<header id="site-header">
+  <div class="wrap nav">
+    <a class="brand" href="#top" aria-label={`${business.name} home`}>
+      <span class="mark">9</span>
+      <span><b>Natural Nails &amp; Spa</b><span>{business.tagline}</span></span>
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#services">Services</a>
+      <a href="#gallery">Looks</a>
+      <a href="#instagram">Instagram</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#visit">Visit</a>
+    </nav>
+    <BookButton phoneLabel="Call to book" />
+    <button class="nav-toggle" aria-label="Menu">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="7" x2="21" y2="7"></line><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="17" x2="21" y2="17"></line></svg>
+    </button>
+  </div>
+</header>
+
+<a id="top"></a>

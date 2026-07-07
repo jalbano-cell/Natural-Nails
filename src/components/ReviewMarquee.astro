@@ -1,0 +1,10 @@
+---
+import { reviewQuotes } from "../data/business";
+const track = [...reviewQuotes, ...reviewQuotes];
+---
+
+<div class="marquee" aria-hidden="false">
+  <div class="marquee-track">
+    {track.map((quote) => <span>&ldquo;{quote}&rdquo;</span>)}
+  </div>
+</div>
